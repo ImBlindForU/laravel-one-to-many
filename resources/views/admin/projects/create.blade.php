@@ -35,7 +35,7 @@
 
                     <div class="form-group mb-3">
                         <label for="type">Tipo</label>
-                        <select name="type_id" id="type">
+                        <select name="type_id" id="type" class="form-select">
                             <option value="">Nessuno tipo</option>
                                 @foreach ($types as $type)
                             <option value="{{$type->id}}">{{$type->name}}</option>

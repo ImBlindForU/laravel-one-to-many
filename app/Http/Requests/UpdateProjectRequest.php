@@ -24,7 +24,7 @@ class UpdateProjectRequest extends FormRequest
     public function rules()
     {
         return [
-            
+            'type_id'=>'nullable',
             'title' => 'unique:projects|max:150',
             'content' => 'nullable',
             'cover_image' => 'nullable|max:520'

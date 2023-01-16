@@ -7,6 +7,7 @@
        
         <div class="d-flex justify-content-between mt-3">
             <h5>{{ $project->created_at }}</h5>
+            <h5 class="text-primary">{{$project->type ? $project->type->name : "Nessun tipo"}}</h5>
             <p>{{ $project->slug }}</p>
         </div>
         <div class="text-center">
