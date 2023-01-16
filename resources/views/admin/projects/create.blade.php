@@ -31,6 +31,21 @@
                             
                         @enderror
                     </div>
+
+
+                    <div class="form-group mb-3">
+                        <label for="type">Tipo</label>
+                        <select name="type_id" id="type">
+                            <option value="">Nessuno tipo</option>
+                                @foreach ($types as $type)
+                            <option value="{{$type->id}}">{{$type->name}}</option>
+                                
+                            @endforeach
+                        </select>
+                       
+                    </div>
+
+
                     {{-- img --}}
                     <div class="form-group mb-3">
                         <label for="cover_image">Immagine</label>
